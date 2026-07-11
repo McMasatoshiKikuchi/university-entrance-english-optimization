@@ -1,0 +1,2 @@
+material_id,title,role,ability_codes,bottleneck_fit,level_fit,exam_fit,feedback,completion,transfer,usability,hard_filters_pass,material_score,status,start_date,target_end_date,weekly_minutes,next_review,notes
+example,教材名,input,LEX-01;LEX-02,,,,,,,,false,,candidate,YYYY-MM-DD,YYYY-MM-DD,,YYYY-MM-DD,書名のみ記録し本文は登録しない
