@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Weekly Optimization: YYYY-MM-DD
 
 ## 制約
