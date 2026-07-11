@@ -1,0 +1,2 @@
+assessment_id,student_id,date,assessment_type,exam_profile,source_name,source_year,section,score,max_score,accuracy,planned_seconds,actual_seconds,timed,confidence,timed_gap,attempt,conditions,status,notes
+A-YYYYMMDD-01,example,YYYY-MM-DD,past_paper,CT-R,大学名または試験名,2026,reading,,,,,,true,,,first,本番形式,draft,問題本文は登録しない
