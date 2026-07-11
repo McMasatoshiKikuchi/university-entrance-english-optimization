@@ -1,0 +1,2 @@
+session_id,student_id,date,ability_code,intervention,material_id,range_ref,planned_minutes,actual_minutes,item_count,correct_count,accuracy,average_confidence,error_types,completed,next_action,retest_date,status,notes
+SES-YYYYMMDD-01,example,YYYY-MM-DD,LEX-02,context_retrieval,example,chapter_or_page,,,,,,,,false,,YYYY-MM-DD,draft,問題本文は登録しない
