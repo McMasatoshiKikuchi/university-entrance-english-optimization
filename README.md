@@ -48,7 +48,19 @@
 | EXE | 試験実行力 | 時間配分、解答順、捨て問、見直し |
 | META | 学習管理力 | 復習、再テスト、計画調整、継続 |
 
-詳細は [docs/ability-map.md](docs/ability-map.md) を参照してください。
+詳細は [大学受験英語 能力マップ](docs/ability-map.md) を参照してください。
+
+## 診断システム
+
+初回診断は、生徒を順位付けする試験ではありません。主要なボトルネックを特定し、次の4週間で優先する学習領域を決めます。
+
+- [初回診断テスト仕様](docs/diagnostic-test-spec.md)
+- [初期診断ルール](docs/diagnostic-rules.md)
+- [診断モジュール表](data/diagnostic-items.csv)
+- [診断結果データ形式](data/diagnostic-results.csv)
+- [診断結果テンプレート](templates/diagnostic-result.md)
+
+診断は正答率だけでなく、所要時間、確信度、文中への転用、24から72時間後の再現率を測定します。評価尺度は未検証の暫定値であり、大学の合否判定には直接使用しません。
 
 ## 基本方針
 
@@ -62,24 +74,12 @@
 
 ## 現在の段階
 
-第1段階として、次を登録しています。
+- Phase 1 能力構造の定義: 完了
+- Phase 2 診断仕様の設計: 完了
+- 診断用の実問題作成と評価尺度の検証: 未完了
+- Phase 3 入試方式との接続: 次の作業
 
-1. プロジェクトの目的と対象
-2. 大学受験英語の能力マップ
-3. 代表的な失点から能力領域を判定するルール
-4. 今後の診断・最適化設計のロードマップ
-
-## 予定する成果物
-
-- 能力別の初回診断仕様
-- 入試方式別の問題形式分類
-- 弱点判定チェックリスト
-- 学習優先度の計算方法
-- 教材選定基準
-- 時期別ロードマップ
-- 模試・過去問分析テンプレート
-- 生徒タイプ別ケーススタディ
-- GitHubで利用できる記録用CSVとIssueテンプレート
+詳細は [ROADMAP.md](ROADMAP.md) を参照してください。
 
 ## リポジトリ構成
 
@@ -89,9 +89,14 @@
 ├─ ROADMAP.md
 ├─ docs/
 │  ├─ ability-map.md
-│  └─ diagnostic-rules.md
-└─ data/
-   └─ ability-codes.csv
+│  ├─ diagnostic-rules.md
+│  └─ diagnostic-test-spec.md
+├─ data/
+│  ├─ ability-codes.csv
+│  ├─ diagnostic-items.csv
+│  └─ diagnostic-results.csv
+└─ templates/
+   └─ diagnostic-result.md
 ```
 
 ## 対象外
