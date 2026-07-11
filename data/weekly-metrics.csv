@@ -1,0 +1,2 @@
+week_start,student_id,ability_code,planned_minutes,actual_minutes,completion_rate,assessment_count,accuracy,response_time_seconds,retention,transfer_score,priority_score,start_level,end_level,past_paper_delta,hypothesis_ids,notes
+YYYY-MM-DD,example,LEX-02,,,,,,,,,,,,,H-001,
