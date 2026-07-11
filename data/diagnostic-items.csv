@@ -1,0 +1,14 @@
+module_id,order,session,domain,ability_codes,task_type,item_count,time_minutes,timed,scoring,status,notes
+A00,1,A,META,META-06,profile_setup,1,5,false,completion,draft,確信度の付け方と実施条件を確認
+A10,2,A,LEX,LEX-01;LEX-02;LEX-03;LEX-04;LEX-05;LEX-06;LEX-07,selected_response,20,10,true,accuracy_time_confidence,draft,単独語義と文中語義を分離
+A20,3,A,GRM,GRM-01;GRM-02;GRM-04;GRM-05;GRM-06;GRM-10;GRM-11,mixed_grammar,15,10,true,accuracy_transfer_confidence,draft,単独問題と文中運用を混在
+A30,4,A,SYN,SYN-01;SYN-02;SYN-03;SYN-04;SYN-05;SYN-06;SYN-07,structure_and_explanation,5,15,true,rubric_time_confidence,draft,構造説明と意味保持を分離採点
+A40,5,A,RDN,RDN-01;RDN-02;RDN-03;RDN-04;RDN-05;RDN-06;RDN-07;RDN-09,timed_reading,2,25,true,accuracy_time_confidence,draft,文章数と語数は難易度調整後に確定
+A41,6,A,QST,QST-01;QST-02;QST-03;QST-04;QST-05,integrated_questions,10,10,true,accuracy_evidence,draft,A40の本文を使用
+B10,1,B,LST,LST-01;LST-02;LST-03;LST-04;LST-05;LST-06;LST-07,listening_mixed,12,15,true,accuracy_script_gap,draft,スクリプト確認前後を比較
+B20,2,B,WRT,WRT-01;WRT-02;WRT-03;WRT-04;WRT-05;WRT-08,short_writing,3,20,true,analytic_rubric,draft,基本文・和文変換・短文意見
+B30,3,B,RDN,RDN-02;RDN-05;RDN-06;RDN-09,untimed_reanalysis,1,15,false,accuracy_timed_gap,draft,A40と同等難易度の別文章
+B40,4,B,META,META-01;META-02;META-03;META-04;META-05,questionnaire,10,10,false,self_report,draft,自己申告は学習記録と照合
+F10,1,follow_up,LEX,LEX-01;LEX-02;LEX-07,parallel_retest,8,5,true,retention_transfer,draft,同一問題ではなく類題を推奨
+F20,2,follow_up,GRM,GRM-04;GRM-05;GRM-11,parallel_retest,5,5,true,retention_transfer,draft,文中運用を含める
+F30,3,follow_up,SYN,SYN-01;SYN-03;SYN-06,parallel_retest,2,5,true,retention_transfer,draft,初回と同構造の類題
