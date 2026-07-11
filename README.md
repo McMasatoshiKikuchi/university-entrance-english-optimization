@@ -93,6 +93,26 @@
 
 計算係数と必要時間の見積りは未検証の暫定値です。実際の得点変化と比較しながら校正します。
 
+## 運用と検証
+
+設計を実際の学習へ適用し、仮説・介入・結果を追跡します。
+
+- [運用ワークフロー](docs/operating-workflow.md)
+- [検証プロトコル](docs/validation-protocol.md)
+- [個人情報・データ管理方針](docs/privacy-data-policy.md)
+- [合成ケーススタディ](examples/synthetic-case-studies.md)
+- [学習セッション](data/study-sessions.csv)
+- [評価結果](data/assessments.csv)
+- [失点履歴](data/error-log.csv)
+- [仮説](data/hypotheses.csv)
+- [介入実験](data/experiments.csv)
+- [週次指標](data/weekly-metrics.csv)
+- [過去問レビュー](templates/past-paper-review.md)
+- [模試レビュー](templates/mock-exam-review.md)
+- [学習実験Issue](.github/ISSUE_TEMPLATE/learning-experiment.md)
+
+合成ケーススタディは利用方法を説明する架空例であり、効果を実証するものではありません。実際の得点改善、係数の妥当性、他の生徒への一般化は今後の検証対象です。
+
 ## 基本方針
 
 - 「英語が苦手」を能力単位の問題へ分解する。
@@ -112,7 +132,8 @@
 - 個別大学の公式情報・過去問プロファイル登録: 未完了
 - Phase 4 学習最適化: 設計完了
 - 優先度係数・教材評価・時間見積りの検証: 未完了
-- Phase 5 運用と検証: 次の作業
+- Phase 5 運用と検証: 運用基盤は完成
+- 実生徒データによる効果・妥当性検証: 未完了
 
 詳細は [ROADMAP.md](ROADMAP.md) を参照してください。
 
@@ -131,7 +152,10 @@
 │  ├─ learning-interventions.md
 │  ├─ material-selection.md
 │  ├─ time-horizon-roadmaps.md
-│  └─ weekly-replanning.md
+│  ├─ weekly-replanning.md
+│  ├─ operating-workflow.md
+│  ├─ validation-protocol.md
+│  └─ privacy-data-policy.md
 ├─ data/
 │  ├─ ability-codes.csv
 │  ├─ diagnostic-items.csv
@@ -141,11 +165,23 @@
 │  ├─ priority-inputs.csv
 │  ├─ ability-dependencies.csv
 │  ├─ material-evaluations.csv
+│  ├─ study-sessions.csv
+│  ├─ assessments.csv
+│  ├─ error-log.csv
+│  ├─ hypotheses.csv
+│  ├─ experiments.csv
+│  ├─ weekly-metrics.csv
 │  └─ sources.csv
-└─ templates/
-   ├─ diagnostic-result.md
-   ├─ university-exam-profile.md
-   └─ weekly-optimization.md
+├─ templates/
+│  ├─ diagnostic-result.md
+│  ├─ university-exam-profile.md
+│  ├─ weekly-optimization.md
+│  ├─ past-paper-review.md
+│  └─ mock-exam-review.md
+├─ examples/
+│  └─ synthetic-case-studies.md
+└─ .github/ISSUE_TEMPLATE/
+   └─ learning-experiment.md
 ```
 
 ## 対象外
