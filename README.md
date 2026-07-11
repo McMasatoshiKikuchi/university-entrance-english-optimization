@@ -45,6 +45,7 @@
 | QST | 設問処理 | 根拠特定、選択肢評価、記述条件 |
 | LST | リスニング | 音声認識、意味処理、意図、図表、メモ |
 | WRT | 英作文・記述 | 文生成、和文英訳、自由英作文、要約 |
+| SPK | スピーキング | 明瞭性、応答、構成、相互作用、修復 |
 | EXE | 試験実行力 | 時間配分、解答順、捨て問、見直し |
 | META | 学習管理力 | 復習、再テスト、計画調整、継続 |
 
@@ -62,6 +63,18 @@
 
 診断は正答率だけでなく、所要時間、確信度、文中への転用、24から72時間後の再現率を測定します。評価尺度は未検証の暫定値であり、大学の合否判定には直接使用しません。
 
+## 入試方式との接続
+
+入試を学校区分だけでなく、実際の問題形式へ分解して能力領域と対応させます。
+
+- [入試方式と要求能力の対応](docs/exam-type-requirements.md)
+- [入試方式別の暫定能力重み](data/exam-type-weights.csv)
+- [大学・学部・方式別プロファイルCSV](data/university-exam-profiles.csv)
+- [大学別分析テンプレート](templates/university-exam-profile.md)
+- [公式資料一覧](data/sources.csv)
+
+能力重み0から5は学習設計用の暫定仮説です。大学公式の配点ではなく、募集要項と過去問分析により大学・学部・方式・年度ごとに上書きします。
+
 ## 基本方針
 
 - 「英語が苦手」を能力単位の問題へ分解する。
@@ -77,7 +90,9 @@
 - Phase 1 能力構造の定義: 完了
 - Phase 2 診断仕様の設計: 完了
 - 診断用の実問題作成と評価尺度の検証: 未完了
-- Phase 3 入試方式との接続: 次の作業
+- Phase 3 入試方式との接続: 方式分類とデータ構造は完了
+- 個別大学の公式情報・過去問プロファイル登録: 未完了
+- Phase 4 学習最適化: 次の作業
 
 詳細は [ROADMAP.md](ROADMAP.md) を参照してください。
 
@@ -90,13 +105,18 @@
 ├─ docs/
 │  ├─ ability-map.md
 │  ├─ diagnostic-rules.md
-│  └─ diagnostic-test-spec.md
+│  ├─ diagnostic-test-spec.md
+│  └─ exam-type-requirements.md
 ├─ data/
 │  ├─ ability-codes.csv
 │  ├─ diagnostic-items.csv
-│  └─ diagnostic-results.csv
+│  ├─ diagnostic-results.csv
+│  ├─ exam-type-weights.csv
+│  ├─ university-exam-profiles.csv
+│  └─ sources.csv
 └─ templates/
-   └─ diagnostic-result.md
+   ├─ diagnostic-result.md
+   └─ university-exam-profile.md
 ```
 
 ## 対象外
