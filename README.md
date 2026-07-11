@@ -109,7 +109,7 @@
 - [週次指標](data/weekly-metrics.csv)
 - [過去問レビュー](templates/past-paper-review.md)
 - [模試レビュー](templates/mock-exam-review.md)
-- [学習実験Issue](.github/ISSUE_TEMPLATE/learning-experiment.md)
+- [学習実験Issue](https://github.com/McMasatoshiKikuchi/university-entrance-english-optimization/issues/new?template=learning-experiment.md)
 
 合成ケーススタディは利用方法を説明する架空例であり、効果を実証するものではありません。実際の得点改善、係数の妥当性、他の生徒への一般化は今後の検証対象です。
 
