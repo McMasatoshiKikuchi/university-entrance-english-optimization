@@ -1,3 +1,12 @@
+for (const link of document.querySelectorAll("a[href]")) {
+  const href = link.getAttribute("href");
+  if (!href || /^(?:[a-z]+:|\/\/|#)/i.test(href)) {
+    continue;
+  }
+
+  link.setAttribute("href", href.replace(/\.md(?=([?#]|$))/i, ".html"));
+}
+
 import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
 const blocks = Array.from(
