@@ -13,6 +13,6 @@
       {{ content }}
     </article>
   </main>
-  <script type="module" src="{{ '/assets/js/mermaid-init.js' | relative_url }}"></script>
+  <script type="module" src="{{ '/assets/js/mermaid-init.js' | relative_url }}?v={{ site.github.build_revision }}"></script>
 </body>
 </html>
