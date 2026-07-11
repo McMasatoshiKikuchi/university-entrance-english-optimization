@@ -1,0 +1,17 @@
+prerequisite,downstream,dependency_strength,reason,status
+LEX,SYN,0.8,語彙認識は構文理解の前提,draft
+LEX,RDN,0.9,語彙認識速度は長文理解と速度に影響,draft
+LEX,LST,0.8,音声からの語彙認識に影響,draft
+LEX,WRT,0.7,語彙検索と語彙選択に影響,draft
+LEX,SPK,0.7,発話時の語彙検索に影響,draft
+GRM,SYN,0.9,文法知識は構造解析の前提,draft
+GRM,WRT,0.8,文生成の正確さに影響,draft
+GRM,SPK,0.6,発話時の文形成に影響,draft
+SYN,RDN,0.9,一文理解は長文理解の前提,draft
+SYN,WRT,0.6,複雑な意味の文生成に影響,draft
+RDN,QST,0.8,本文理解は設問処理の前提,draft
+RDN,WRT,0.5,要約・資料型英作文に影響,draft
+LST,SPK,0.7,質問理解と対話維持に影響,draft
+EXE,RDN,0.4,時間配分は制限時間内得点に影響,draft
+META,LEX,0.5,復習と再テストは定着に影響,draft
+META,GRM,0.5,復習と再テストは定着に影響,draft
