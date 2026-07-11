@@ -1,0 +1,2 @@
+hypothesis_id,student_id,created_at,statement,mechanism,target_ability,evidence_level,baseline_metric,baseline_value,predicted_outcome,success_threshold,start_date,end_date,status,decision,notes
+H-001,example,YYYY-MM-DD,長文失点の主因は修飾関係の誤認,SYN-03改善がRDN正答率を上げる,SYN-03,hypothesis,structure_accuracy,,未使用文で構造特定率が改善,10ポイント以上,YYYY-MM-DD,YYYY-MM-DD,active,,
