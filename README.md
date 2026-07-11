@@ -75,6 +75,24 @@
 
 能力重み0から5は学習設計用の暫定仮説です。大学公式の配点ではなく、募集要項と過去問分析により大学・学部・方式・年度ごとに上書きします。
 
+## 学習最適化
+
+診断された能力差と入試形式から、次の1週間に使う時間を決定します。
+
+- [学習優先度モデル](docs/priority-model.md)
+- [能力別学習介入](docs/learning-interventions.md)
+- [教材選定基準](docs/material-selection.md)
+- [残り期間別ロードマップ](docs/time-horizon-roadmaps.md)
+- [週次再計画ルール](docs/weekly-replanning.md)
+- [優先度計算データ](data/priority-inputs.csv)
+- [能力依存関係](data/ability-dependencies.csv)
+- [教材評価データ](data/material-evaluations.csv)
+- [週間最適化テンプレート](templates/weekly-optimization.md)
+
+優先度は、能力差、入試重要度、転用性、改善可能性、期限、根拠の確かさ、次のレベルに必要な時間、能力間の依存関係から算出します。同時に扱う重点能力は原則2から3個です。
+
+計算係数と必要時間の見積りは未検証の暫定値です。実際の得点変化と比較しながら校正します。
+
 ## 基本方針
 
 - 「英語が苦手」を能力単位の問題へ分解する。
@@ -92,7 +110,9 @@
 - 診断用の実問題作成と評価尺度の検証: 未完了
 - Phase 3 入試方式との接続: 方式分類とデータ構造は完了
 - 個別大学の公式情報・過去問プロファイル登録: 未完了
-- Phase 4 学習最適化: 次の作業
+- Phase 4 学習最適化: 設計完了
+- 優先度係数・教材評価・時間見積りの検証: 未完了
+- Phase 5 運用と検証: 次の作業
 
 詳細は [ROADMAP.md](ROADMAP.md) を参照してください。
 
@@ -106,17 +126,26 @@
 │  ├─ ability-map.md
 │  ├─ diagnostic-rules.md
 │  ├─ diagnostic-test-spec.md
-│  └─ exam-type-requirements.md
+│  ├─ exam-type-requirements.md
+│  ├─ priority-model.md
+│  ├─ learning-interventions.md
+│  ├─ material-selection.md
+│  ├─ time-horizon-roadmaps.md
+│  └─ weekly-replanning.md
 ├─ data/
 │  ├─ ability-codes.csv
 │  ├─ diagnostic-items.csv
 │  ├─ diagnostic-results.csv
 │  ├─ exam-type-weights.csv
 │  ├─ university-exam-profiles.csv
+│  ├─ priority-inputs.csv
+│  ├─ ability-dependencies.csv
+│  ├─ material-evaluations.csv
 │  └─ sources.csv
 └─ templates/
    ├─ diagnostic-result.md
-   └─ university-exam-profile.md
+   ├─ university-exam-profile.md
+   └─ weekly-optimization.md
 ```
 
 ## 対象外
