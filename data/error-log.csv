@@ -1,0 +1,2 @@
+error_id,student_id,assessment_id,item_ref,ability_code,error_type,confidence,evidence,root_cause,next_action,retest_date,retest_assessment_id,retest_result,recurrence_count,status,notes
+E-YYYYMMDD-001,example,A-YYYYMMDD-01,大問1問2,QST-04,strategy,0.75,本文外情報を含む選択肢を選択,誤答排除基準が不安定,誤答理由を分類,YYYY-MM-DD,,,1,active,問題本文は登録しない
