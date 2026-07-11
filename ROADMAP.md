@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Roadmap
 
 ## Phase 1: 構造定義
