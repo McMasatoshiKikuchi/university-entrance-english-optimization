@@ -1,0 +1,2 @@
+experiment_id,hypothesis_id,student_id,intervention,ability_code,material_id,start_date,end_date,planned_weekly_minutes,actual_total_minutes,primary_metric,baseline_value,post_value,maintenance_metric,maintenance_baseline,maintenance_post,confounds,result,decision,status,notes
+X-001,H-001,example,修飾関係の可視化と類題,SYN-03,example,YYYY-MM-DD,YYYY-MM-DD,120,,structure_accuracy,,,,,,,inconclusive,,draft,
