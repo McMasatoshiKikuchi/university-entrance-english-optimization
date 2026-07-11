@@ -109,9 +109,19 @@
 - [週次指標](data/weekly-metrics.csv)
 - [過去問レビュー](templates/past-paper-review.md)
 - [模試レビュー](templates/mock-exam-review.md)
-- [学習実験Issue](https://github.com/McMasatoshiKikuchi/university-entrance-english-optimization/issues/new?template=learning-experiment.md)
+- [学習実験Issue（運営者向け・GitHubログイン必須）](https://github.com/McMasatoshiKikuchi/university-entrance-english-optimization/issues/new?template=learning-experiment.md)
 
 合成ケーススタディは利用方法を説明する架空例であり、効果を実証するものではありません。実際の得点改善、係数の妥当性、他の生徒への一般化は今後の検証対象です。
+
+## 利用案内とGitHub運用
+
+利用者の立場に応じて、次の資料を参照してください。
+
+- [一般利用者向け利用案内](docs/user-guide.md): GitHubアカウント不要。資料の読み進め方、テンプレート、個人情報の注意
+- [GitHub運用手順書](docs/github-operations-guide.md): 運営者向け。資料・CSV・Issue・Pagesの更新と公開確認
+- [GitHub Pages・表示トラブル対処](docs/troubleshooting.md): 404、Markdown生表示、Mermaid、反映遅延などへの対処
+
+Pagesの閲覧にはGitHubアカウントは必要ありません。Issue作成、ファイル編集、修正提案にはGitHubへのログインが必要です。
 
 ## 基本方針
 
@@ -155,7 +165,10 @@
 │  ├─ weekly-replanning.md
 │  ├─ operating-workflow.md
 │  ├─ validation-protocol.md
-│  └─ privacy-data-policy.md
+│  ├─ privacy-data-policy.md
+│  ├─ user-guide.md
+│  ├─ github-operations-guide.md
+│  └─ troubleshooting.md
 ├─ data/
 │  ├─ ability-codes.csv
 │  ├─ diagnostic-items.csv
