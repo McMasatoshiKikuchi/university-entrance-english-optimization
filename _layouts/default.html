@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ja' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/pages.css' | relative_url }}">
+</head>
+<body>
+  <main class="page-shell">
+    <article class="markdown-body">
+      {{ content }}
+    </article>
+  </main>
+  <script type="module" src="{{ '/assets/js/mermaid-init.js' | relative_url }}"></script>
+</body>
+</html>
